@@ -1,0 +1,56 @@
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git
+$ git clone https://github.com/swapnilchavhan/GitBashLearning.git
+Cloning into 'GitBashLearning'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git
+$ ls
+GitBashLearning/
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git
+$ cd ^C
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git
+$ cd GitBashLearning/
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git log
+commit 389413e6a14ad2026b11fbfe74eb2ec84e96d577 (HEAD -> main, origin/main, origin/HEAD)
+Author: swapnilchavhan <42908722+swapnilchavhan@users.noreply.github.com>
+Date:   Tue Jan 23 22:40:10 2024 +0530
+
+    Initial commit
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git remote -v
+origin  https://github.com/swapnilchavhan/GitBashLearning.git (fetch)
+origin  https://github.com/swapnilchavhan/GitBashLearning.git (push)
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ ls -a
+./  ../  .git/  README.md
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File1.txt
+        File2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
