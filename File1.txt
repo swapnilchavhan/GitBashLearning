@@ -54,3 +54,123 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ ^C
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File1.txt
+        File2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git add .
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File1.txt
+        new file:   File2.txt
+
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git commit -m "First Commit-GitBash commands"
+[main 0f309d9] First Commit-GitBash commands
+ 2 files changed, 56 insertions(+)
+ create mode 100644 File1.txt
+ create mode 100644 File2.txt
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=spchavhan16@gmail.com
+http.sslverify=false
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/swapnilchavhan/GitBashLearning.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git log
+commit 0f309d9afbdf506dfe7c80e1ff120459bbd66e4c (HEAD -> main)
+Author: unknown <spchavhan16@gmail.com>
+Date:   Tue Jan 23 23:05:45 2024 +0530
+
+    First Commit-GitBash commands
+
+commit 389413e6a14ad2026b11fbfe74eb2ec84e96d577 (origin/main, origin/HEAD)
+Author: swapnilchavhan <42908722+swapnilchavhan@users.noreply.github.com>
+Date:   Tue Jan 23 22:40:10 2024 +0530
+
+    Initial commit
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git push
+warning: ----------------- SECURITY WARNING ----------------
+warning: | TLS certificate verification has been disabled! |
+warning: ---------------------------------------------------
+warning: HTTPS connections may not be secure. See https://aka.ms/gcm/tlsverify for more information.
+warning: ----------------- SECURITY WARNING ----------------
+warning: | TLS certificate verification has been disabled! |
+warning: ---------------------------------------------------
+warning: HTTPS connections may not be secure. See https://aka.ms/gcm/tlsverify for more information.
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 911 bytes | 911.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/swapnilchavhan/GitBashLearning.git
+   389413e..0f309d9  main -> main
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
