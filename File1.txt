@@ -174,3 +174,262 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 
 Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ ^C
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File1.txt
+        modified:   File2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git add..
+git: 'add..' is not a git command. See 'git --help'.
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git add .
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   File1.txt
+        modified:   File2.txt
+
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git commit -m "Second Commit-updated the file"
+[main bbc38ec] Second Commit-updated the file
+ 2 files changed, 122 insertions(+)
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.82 KiB | 931.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/swapnilchavhan/GitBashLearning.git
+   0f309d9..bbc38ec  main -> main
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git log
+commit bbc38ec3c8bddec11d5610b66429f628e157a116 (HEAD -> main, origin/main, origin/HEAD)
+Author: unknown <spchavhan16@gmail.com>
+Date:   Tue Jan 23 23:25:36 2024 +0530
+
+    Second Commit-updated the file
+
+commit 0f309d9afbdf506dfe7c80e1ff120459bbd66e4c
+Author: unknown <spchavhan16@gmail.com>
+Date:   Tue Jan 23 23:05:45 2024 +0530
+
+    First Commit-GitBash commands
+
+commit 389413e6a14ad2026b11fbfe74eb2ec84e96d577
+Author: swapnilchavhan <42908722+swapnilchavhan@users.noreply.github.com>
+Date:   Tue Jan 23 22:40:10 2024 +0530
+
+    Initial commit
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git pull
+From https://github.com/swapnilchavhan/GitBashLearning
+ * [new branch]      branch1    -> origin/branch1
+Already up to date.
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git branch
+* main
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git checkout branch1
+Switched to a new branch 'branch1'
+branch 'branch1' set up to track 'origin/branch1'.
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
+$ git log
+commit bbc38ec3c8bddec11d5610b66429f628e157a116 (HEAD -> branch1, origin/main, origin/branch1, origin/HEAD, main)
+Author: unknown <spchavhan16@gmail.com>
+Date:   Tue Jan 23 23:25:36 2024 +0530
+
+    Second Commit-updated the file
+
+commit 0f309d9afbdf506dfe7c80e1ff120459bbd66e4c
+Author: unknown <spchavhan16@gmail.com>
+Date:   Tue Jan 23 23:05:45 2024 +0530
+
+    First Commit-GitBash commands
+
+commit 389413e6a14ad2026b11fbfe74eb2ec84e96d577
+Author: swapnilchavhan <42908722+swapnilchavhan@users.noreply.github.com>
+Date:   Tue Jan 23 22:40:10 2024 +0530
+
+    Initial commit
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
+$ git diff main branch1
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git add .
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   File2.txt
+
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git commit -m "3rd commit-update in file2"
+[main b2ebc4f] 3rd commit-update in file2
+ 1 file changed, 3 insertions(+)
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 385 bytes | 385.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/swapnilchavhan/GitBashLearning.git
+   bbc38ec..b2ebc4f  main -> main
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (main)
+$ git checkout branch1
+Switched to branch 'branch1'
+Your branch is up to date with 'origin/branch1'.
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
+$ git diff main branch1
+diff --git a/File2.txt b/File2.txt
+index 6120a9f..08d549c 100644
+--- a/File2.txt
++++ b/File2.txt
+@@ -1,5 +1,2 @@
+-git config--global user.name "swapnilchavhan"
+-git config--global user.email "spchavhan16@gmail.com"
+-
+ git config--global user.name "swapnilchavhan"
+ git config--global user.email "spchavhan16@gmail.com"
+\ No newline at end of file
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
+$ git merge main
+Updating bbc38ec..b2ebc4f
+Fast-forward
+ File2.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/swapnilchavhan/GitBashLearning.git
+   bbc38ec..b2ebc4f  branch1 -> branch1
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
+$ git status
+On branch branch1
+Your branch is up to date with 'origin/branch1'.
+
+nothing to commit, working tree clean
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
+$ git log
+commit b2ebc4fad3174c34e6103dda49bdfd9e7215e91a (HEAD -> branch1, origin/main, origin/branch1, origin/HEAD, main)
+Author: unknown <spchavhan16@gmail.com>
+Date:   Tue Jan 23 23:45:49 2024 +0530
+
+    3rd commit-update in file2
+
+commit bbc38ec3c8bddec11d5610b66429f628e157a116
+Author: unknown <spchavhan16@gmail.com>
+Date:   Tue Jan 23 23:25:36 2024 +0530
+
+    Second Commit-updated the file
+
+commit 0f309d9afbdf506dfe7c80e1ff120459bbd66e4c
+Author: unknown <spchavhan16@gmail.com>
+Date:   Tue Jan 23 23:05:45 2024 +0530
+
+    First Commit-GitBash commands
+
+commit 389413e6a14ad2026b11fbfe74eb2ec84e96d577
+Author: swapnilchavhan <42908722+swapnilchavhan@users.noreply.github.com>
+Date:   Tue Jan 23 22:40:10 2024 +0530
+
+    Initial commit
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
+$ ^C
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
+$ git status
+On branch branch1
+Your branch is up to date with 'origin/branch1'.
+
+nothing to commit, working tree clean
+
+Swapnil@DESKTOP-Q6SJNDQ MINGW64 /f/Learning/Git/GitBashLearning (branch1)
